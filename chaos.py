@@ -68,7 +68,6 @@ def install_requirements():
     os.system("pip install -r requirements.txt")
 
 if __name__ == "__main__":
-<<<<<<< HEAD
     with open("cout.txt", "a") as cout:
         with contextlib.redirect_stdout(cout):
             with open("cerr.txt", "a") as cerr:
@@ -130,7 +129,6 @@ if __name__ == "__main__":
 
                         logging.info("sleeping for %d seconds", settings.SLEEP_TIME)
                         time.sleep(settings.SLEEP_TIME)
-=======
                     logging.info("starting up and entering event loop")
                     
                     os.system("pkill chaos_server")
@@ -191,4 +189,3 @@ if __name__ == "__main__":
 
                         logging.info("sleeping for %d seconds", settings.SLEEP_TIME)
                         time.sleep(settings.SLEEP_TIME)
->>>>>>> upstream/master
